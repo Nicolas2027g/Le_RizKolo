@@ -9,6 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 400px;
+    width: auto;
+
   }
   
   /* Texte caché par défaut */
@@ -27,8 +30,20 @@
     width: 80%;
   }
   
-  /* Affichage du texte uniquement au clic */
   .text-overlay-container:active .text-overlay {
     opacity: 1;
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f8b400;
+  }
+  
+  footer i {
+    margin-right: 8px;
   }
   
