@@ -5,11 +5,626 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_menu.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <title>Menu</title>
     </head>
     <body>
-        
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between w-100 px-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/Logo-RizKolo.png" alt="Logo" class="logo-navbar img-fluid rounded shadow" style="max-height: 40px;">
+                        </a>
+                    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse w-100" id="navbarNav">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-warning rounded-pill px-3" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-warning rounded-pill px-3" href="#">Menu</a>
+                            </li>
+                        </ul>
+    
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-primary rounded-pill px-3" href="reservation.html">Réservation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Section Scrollspy avec Dropdowns -->
+            <div id="menu-scrollspy" class="container py-4">
+                <h2 class="text-center mb-4">Notre Carte</h2>
+                <div class="d-flex justify-content-center mb-3">
+                <!-- Dropdown Menus -->
+                <div class="dropdown mx-2">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">Catégories</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#popular">Populaires</a></li>
+                    <li><a class="dropdown-item" href="#vegetarian">Végétariens</a></li>
+                    <li><a class="dropdown-item" href="#spicy">Épicés</a></li>
+                    <li><a class="dropdown-item" href="#kids">Enfants</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown mx-2">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">Plats & Boissons</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#starters">Entrées</a></li>
+                    <li><a class="dropdown-item" href="#main-courses">Plats</a></li>
+                    <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                    <li><a class="dropdown-item" href="#drinks">Boissons</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Section Plats avec Cartes -->
+            <div class="container">
+                <div class="row">
+                <!-- Exemples de menu populaires -->
+                <h3 id="popular" class="text-center mt-4">⭐ Menus Populaires</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/Logo-RizKolo.webp" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Riz’Kolo Signature</h5>
+                            <p class="card-text">
+                                Une sélection des plats les plus appréciés du restaurant.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’croc Fondant
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’Kolo Signature
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’Kolo au Lait
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 28,50€</strong>
+                            </p>
+                            <span class="badge bg-warning">Populaire</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/Logo-RizKolo.webp" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Saveurs du Monde</h5>
+                            <p class="card-text">
+                                Un voyage culinaire aux inspirations variées.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’start Japonais
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’pices Indien
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’coco Mangue Passion
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 27,00€</strong>
+                            </p>
+                            <span class="badge bg-warning">Populaire</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/Logo-RizKolo.webp" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Gourmand</h5>
+                            <p class="card-text">
+                                Un menu généreux pour les amateurs de cuisine réconfortante.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’lette Savoyarde
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’clette Savoyarde
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’tella Gourmand
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 27,00€</strong>
+                            </p>
+                            <span class="badge bg-warning">Populaire</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exemples de menu végétariens -->
+                <h3 id="vegetarian" class="text-center mt-4">🥬 Menus Végétariens</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_végé.png" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Fraîcheur Végétale</h5>
+                            <p class="card-text">
+                                Une alternative légère et pleine de saveurs.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’start Japonais
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’curieux Végétal
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’fraîcheur Yuzu
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 24,50€</strong>
+                            </p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_végé.png" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Riz’green</h5>
+                            <p class="card-text">
+                                Un menu végétarien équilibré et gourmand.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’coleslaw Exotique
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’otto Crémeux aux Cèpes
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’pops Surprise
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 25,50€</strong>
+                            </p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exemples de menu épicé -->
+                <h3 id="spicy" class="text-center mt-4">🌶️ Menus Épicés</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_épicé.png" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Feu d’AsieMenu Saveurs du Monde</h5>
+                            <p class="card-text">
+                                Pour les amateurs de sensations fortes aux influences asiatiques.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’péro Thaï
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’sto Piquant
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’fraîcheur Yuzu
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 26,00€</strong>
+                            </p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_épicé.png" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Cajun Épicé</h5>
+                            <p class="card-text">
+                                Un menu pimenté inspiré de la cuisine créole.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’caille de la Mer
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’tournelle Cajun
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’pops Surprise
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 27,50€</strong>
+                            </p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemples de menu enfants -->
+                <h3 id="kids" class="text-center mt-4">🧸 Menu Enfant</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_enfant.jpg" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Enfant Riz’drôle</h5>
+                            <p class="card-text">
+                                Un menu adapté aux plus petits avec des plats ludiques et gourmands.
+                            </p>
+                            <p>
+                                <strong>Entrée: </strong>Riz’croc Fondant
+                            </p>
+                            <p>
+                                <strong>Plat: </strong>Riz’bola Italienne
+                            </p>
+                            <p>
+                                <strong>Dessert</strong>Riz’tella Gourmand
+                            </p>
+                            <p class="Prix">
+                                <strong>Prix: 18,00€</strong>
+                            </p>
+                            <span class="badge bg-info">Enfant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Exemple d'entrée -->
+                <h3 id="starters" class="text-center mt-4">🍽️ Entrées</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/entré_0.png" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’péro Thaï</h5>
+                            <p class="card-text">Boulettes de riz gluant parfumé à la citronnelle et au gingembre, accompagnées d’une sauce cacahuète maison.</p><p class="Prix"> <strong>Prix: 7,50€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/entré_1.png" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’lette Savoyarde</h5>
+                            <p class="card-text">Galettes de riz et pommes de terre gratinées au reblochon, servies avec une chiffonnade de jambon cru.</p><p class="Prix"> <strong>Prix: 9,50€</strong></p>
+                            <span class="badge bg-info">Enfant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/entré_2.png" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’start Japonais</h5>
+                            <p class="card-text">Mini onigiris au thon, saumon et avocat, délicatement assaisonnés de sésame et de sauce soja sucrée.</p><p class="Prix"> <strong>Prix: 9,00€</strong></p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/entré_3.jpg" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’croc Fondant</h5>
+                            <p class="card-text">Croquettes de riz au fromage fondant, enrobées d’une chapelure croustillante et servies avec une sauce au yaourt citronné.</p><p class="Prix"> <strong>Prix: 8,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/entré_4.jpg" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’coleslaw Exotique</h5>
+                            <p class="card-text">Salade croquante de chou, carottes et mangue, servie avec un riz parfumé à la coriandre et une vinaigrette sucrée-salée.</p><p class="Prix"> <strong>Prix: 7,50€</strong></p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/entré_5.jpg" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’caille de la Mer</h5>
+                            <p class="card-text">Tartare de dorade et crevettes sur un lit de riz vinaigré, accompagné d’une mayonnaise au wasabi.</p><p class="Prix"> <strong>Prix: 9,50€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemple de plat principal -->
+                <h3 id="main-courses" class="text-center mt-4">🥘 Plats Principaux</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_0.webp" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’Kolo Signature</h5>
+                            <p class="card-text">Un plat exclusif mélangeant riz noir, magret de canard grillé et sauce aux fruits rouges.</p><p class="Prix"> <strong>Prix: 18,00€</strong></p>
+                            <span class="badge bg-warning">Spécialité</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_1.webp" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’pices Indien</h5>
+                            <p class="card-text">Un biryani parfumé au curcuma et garam masala, accompagné de poulet mariné et de yaourt à la menthe.</p><p class="Prix"> <strong>Prix: 14,00€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_2.jpg" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’sto Piquant</h5>
+                            <p class="card-text"> Riz sauté façon wok avec du bœuf mariné, du poivron et une sauce épicée asiatique.</p><p class="Prix"> <strong>Prix: 14,50€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_3.jpg" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’tournelle Cajun</h5>
+                            <p class="card-text"> Jambalaya épicé aux crevettes et au chorizo, relevé d’une sauce tomate pimentée.</p><p class="Prix"> <strong>Prix: 15,00€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_4.webp" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’otto Crémeux aux Cèpes</h5>
+                            <p class="card-text">Un risotto onctueux aux cèpes et parmesan, relevé d’une touche de truffe.</p><p class="Prix"> <strong>Prix: 15,50€</strong></p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_5.jpg" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’curieux Végétal</h5>
+                            <p class="card-text">Riz sauté aux légumes croquants, noix de cajou et tofu caramélisé dans une sauce teriyaki.</p><p class="Prix"> <strong>Prix: 13,50€</strong></p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_6.webp" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’bola Italienne</h5>
+                            <p class="card-text">Boulettes de riz farcies à la mozzarella et à la viande hachée, servies avec une sauce tomate maison.</p><p class="Prix"> <strong>Prix: 14,50€</strong></p>
+                            <span class="badge bg-info">Enfant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_7.jpg" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’clette Savoyarde</h5>
+                            <p class="card-text">Gratin de riz et pommes de terre au reblochon, accompagné de charcuteries artisanales.</p><p class="Prix"> <strong>Prix: 17,00€</strong></p>
+                            <span class="badge bg-info">Enfant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_8.webp" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’fondant Coco Curry</h5>
+                            <p class="card-text">Riz au lait de coco accompagné d’un curry de gambas épicé et légèrement sucré.</p><p class="Prix"> <strong>Prix: 15,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plat_9.jpeg" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’Mignon Teriyaki</h5>
+                            <p class="card-text">Filet mignon de porc caramélisé à la sauce teriyaki, servi avec un riz aux graines de sésame.</p><p class="Prix"> <strong>Prix: 17,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemple de dessert -->
+                <h3 id="desserts" class="text-center mt-4">🍰 Desserts</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/dessert_0.jpg" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’Kolo au Lait</h5>
+                            <p class="card-text">Riz au lait onctueux à la vanille de Madagascar, accompagné d’un coulis de caramel beurre salé.</p><p class="Prix"> <strong>Prix: 7,00€</strong></p>
+                            <span class="badge bg-warning">Spécialité</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/dessert_1.webp" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’pops Surprise</h5>
+                            <p class="card-text">Boulettes de riz soufflé enrobées de chocolat blanc et éclats de framboise, servies sur un coulis de fruits rouges.</p><p class="Prix"> <strong>Prix: 8,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/dessert_2.jpg" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’coco Mangue Passion</h5>
+                            <p class="card-text">Perles de riz au lait de coco avec une compotée de mangue et fruit de la passion.</p><p class="Prix"> <strong>Prix: 7,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/dessert_3.jpg" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’tella Gourmand</h5>
+                            <p class="card-text">Riz soufflé croquant enrobé de chocolat noir et noisettes, façon rocher praliné.</p><p class="Prix"> <strong>Prix: 8,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/dessert_4.jpg" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz’fraîcheur Yuzu</h5>
+                            <p class="card-text">Riz au lait parfumé au yuzu et zestes de citron vert, servi avec des éclats de meringue.</p><p class="Prix"> <strong>Prix: 7,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemple de boisson -->
+                <h3 id="drinks" class="text-center mt-4">🥤 Boissons</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Soda classique</h5>
+                            <p class="card-text Prix"><strong>Prix: 3,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Thé glacé maison</h5>
+                            <p class="card-text Prix"><strong>Prix: 4,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Limonade artisanale</h5>
+                            <p class="card-text Prix"><strong>Prix: 4,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vin blanc sec (Sauvignon)</h5>
+                            <p class="card-text Prix"><strong>Prix: 5,00€ | 24,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vin rouge léger (Pinot Noir)</h5>
+                            <p class="card-text Prix"><strong>Prix: 5,00€ | 24,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vin rosé (Côtes de Provence)</h5>
+                            <p class="card-text Prix"><strong>Prix: 4,50€ | 22,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bière blonde artisanale</h5>
+                            <p class="card-text Prix"><strong>Prix: 5,00€ | 7,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bière ambrée</h5>
+                            <p class="card-text Prix"><strong>Prix: 5,50€ | 7,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bière IPA</h5>
+                            <p class="card-text Prix"><strong>Prix: 6,00€ | 8,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Espresso</h5>
+                            <p class="card-text Prix"><strong>Prix: 2,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text Prix"><strong>Prix: 4,00€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chocolat chaud maison</h5>
+                            <p class="card-text Prix"><strong>Prix: 4,50€</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">📞 Contactez-nous</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 12 Rue des Saveurs, 75000 Bord de Mer</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@lerizkolo.com" class="text-light">contact@lerizkolo.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+33123456789" class="text-light">+33 1 23 45 67 89</a></p>
+                </div>
+          
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">⏰ Horaires d’ouverture</h5>
+                    <p><i class="far fa-clock"></i> Lundi – Vendredi : <br> 11h30 – 14h30 | 18h30 – 22h00</p>
+                    <p><i class="far fa-clock"></i> Samedi – Dimanche : <br> 11h30 – 15h00 | 18h30 – 23h00</p>
+                </div>
+          
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">🔗 Suivez-nous</h5>
+                    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com" class="text-light">@LeRizKolo</a></p>
+                    <p><i class="fab fa-facebook"></i> <a href="https://facebook.com" class="text-light">Le RizKolo Officiel</a></p>
+                    <p><i class="fab fa-twitter"></i> <a href="https://x.com" class="text-light">@LeRizKolo</a></p>
+                </div>
+                
+                </div>
+          
+                <div class="text-center mt-3">
+                    <p class="mb-1">🌟 Réservez dès maintenant et venez partager un moment gourmand avec nous !</p>
+                    <p class="small">&copy; 2024 Le RizKolo – Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
