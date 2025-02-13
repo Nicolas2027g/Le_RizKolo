@@ -43,8 +43,140 @@
             </nav>
         </header>
         <main>
+            <!-- Section Scrollspy avec Dropdowns -->
+            <div id="menu-scrollspy" class="container py-4">
+                <h2 class="text-center mb-4">Notre Carte</h2>
+                <div class="d-flex justify-content-center mb-3">
+                <!-- Dropdown Menus -->
+                <div class="dropdown mx-2">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">Catégories</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#popular">Populaires</a></li>
+                    <li><a class="dropdown-item" href="#vegetarian">Végétariens</a></li>
+                    <li><a class="dropdown-item" href="#spicy">Épicés</a></li>
+                    <li><a class="dropdown-item" href="#kids">Enfants</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown mx-2">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">Plats & Boissons</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#starters">Entrées</a></li>
+                    <li><a class="dropdown-item" href="#main-courses">Plats</a></li>
+                    <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                    <li><a class="dropdown-item" href="#drinks">Boissons</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Section Plats avec Cartes -->
+            <div class="container">
+                <div class="row">
+                <!-- Exemples de menu populaires -->
+                <h3 id="popular" class="text-center mt-4">⭐ Menus Populaires</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/bol-de-riz.jpg" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Gourmand</h5>
+                            <p class="card-text">Un assortiment de nos meilleurs plats. <strong>Prix: 25€</strong></p>
+                            <span class="badge bg-warning">Populaire</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Exemples de menu épicé -->
+                <h3 id="spicy" class="text-center mt-4">🌶️ Menus Épicés</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_popular1.jpg" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Gourmand</h5>
+                            <p class="card-text">Un assortiment de nos meilleurs plats. <strong>Prix: 25€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exemples de menu végétariens -->
+                <h3 id="vegetarian" class="text-center mt-4">🥬 Menus Végétariens</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_popular1.jpg" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Gourmand</h5>
+                            <p class="card-text">Un assortiment de nos meilleurs plats. <strong>Prix: 25€</strong></p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemples de menu enfants -->
+                <h3 id="kids" class="text-center mt-4">🧸 Menu Enfant</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/menu_popular1.jpg" class="card-img-top" alt="Menu Populaire 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu Gourmand</h5>
+                            <p class="card-text">Un assortiment de nos meilleurs plats. <strong>Prix: 12€</strong></p>
+                            <span class="badge bg-info">Enfant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Exemple d'entrée -->
+                <h3 id="starters" class="text-center mt-4">🍽️ Entrées</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/starter1.jpg" class="card-img-top" alt="Entrée 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Salade de quinoa</h5>
+                            <p class="card-text">Délicieuse salade fraîche. <strong>Prix: 8€</strong></p>
+                            <span class="badge bg-success">Végétarien</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemple de plat principal -->
+                <h3 id="main-courses" class="text-center mt-4">🥘 Plats Principaux</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/main1.jpg" class="card-img-top" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Poulet au curry</h5>
+                            <p class="card-text">Poulet mijoté aux épices. <strong>Prix: 15€</strong></p>
+                            <span class="badge bg-danger">Épicé</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemple de dessert -->
+                <h3 id="desserts" class="text-center mt-4">🍰 Desserts</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/dessert1.jpg" class="card-img-top" alt="Dessert 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Fondant au chocolat</h5>
+                            <p class="card-text">Un cœur coulant irrésistible. <strong>Prix: 6€</strong></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Exemple de boisson -->
+                <h3 id="drinks" class="text-center mt-4">🥤 Boissons</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coca-Cola</h5>
+                            <p class="card-text"><strong>Prix: 3€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </main>
+
         <footer class="bg-dark text-light py-4">
             <div class="container">
                 <div class="row text-center text-md-start">
