@@ -11,16 +11,15 @@ img{
     border-radius: 15px;
 }
   
-  footer a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #f8b400;
-  }
-  
-  footer i {
-    margin-right: 8px;
-  }
-  
+footer a {
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+footer a:hover {
+color: #f8b400;
+}
+
+footer i {
+margin-right: 8px;
+}
