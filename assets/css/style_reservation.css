@@ -1,0 +1,25 @@
+h1 {
+    color: #d39e00; /* Couleur or */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+button {
+    font-weight: bold;
+}
+
+footer a {
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+footer a:hover {
+color: #f8b400;
+}
+
+footer i {
+margin-right: 8px;
+}
