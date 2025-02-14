@@ -22,3 +22,11 @@ color: #f8b400;
 footer i {
 margin-right: 8px;
 }
+
+#menuButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 1.2rem;
+}
